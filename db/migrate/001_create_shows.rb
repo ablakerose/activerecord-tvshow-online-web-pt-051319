@@ -3,9 +3,9 @@
 # columns. `name`, `network`, and `day` have a datatype of string, and `rating`
 # has a datatype of integer.
 
-class CreateShows < ActiveRecord::Migration
+class CreateShows < ActiveRecord::Migration[4.2]
   def change
-    create_table (:shows) do |t|
+    create_table(:shows) do |t|
       t.string :name
       t.string :network
       t.string :day
